@@ -1,0 +1,81 @@
+PODS:
+  - Aspects (1.4.1)
+  - DoActionSheet (1.0)
+  - FastImageCache (1.5.1)
+  - FCFileManager (1.0.17)
+  - FMDB (2.6.2):
+    - FMDB/SQLCipher (= 2.6.2)
+  - FMDB/SQLCipher (2.6.2):
+    - SQLCipher
+  - Masonry (1.0.1)
+  - MMTransitionAnimator (0.0.3)
+  - RealReachability (1.1.7):
+    - RealReachability/Connection (= 1.1.7)
+    - RealReachability/Ping (= 1.1.7)
+  - RealReachability/Connection (1.1.7)
+  - RealReachability/Ping (1.1.7)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - SQLCipher (3.4.0):
+    - SQLCipher/standard (= 3.4.0)
+  - SQLCipher/common (3.4.0)
+  - SQLCipher/standard (3.4.0):
+    - SQLCipher/common
+  - StreamingKit (0.1.29)
+  - SVProgressHUD (2.0.3)
+  - TCBlobDownload (2.1.1)
+  - TYMProgressBarView (0.3.2)
+  - UIImage-ResizeMagick (0.0.1)
+
+DEPENDENCIES:
+  - Aspects
+  - DoActionSheet (~> 1.0)
+  - FastImageCache (from `https://github.com/mojun/FastImageCache.git`)
+  - FCFileManager (~> 1.0.17)
+  - FMDB (from `https://github.com/mojun/fmdb.git`)
+  - Masonry
+  - MMTransitionAnimator
+  - RealReachability
+  - SDCycleScrollView
+  - StreamingKit (~> 0.1.29)
+  - SVProgressHUD
+  - TCBlobDownload (~> 2.1.1)
+  - TYMProgressBarView
+  - UIImage-ResizeMagick (~> 0.0.1)
+
+EXTERNAL SOURCES:
+  FastImageCache:
+    :git: https://github.com/mojun/FastImageCache.git
+  FMDB:
+    :git: https://github.com/mojun/fmdb.git
+
+CHECKOUT OPTIONS:
+  FastImageCache:
+    :commit: 7ffc18bdb541cf8682b3922f9f1e93a83a34d200
+    :git: https://github.com/mojun/FastImageCache.git
+  FMDB:
+    :commit: 760efe34ec723cb26d0b63bfb3d01c6221b71bd4
+    :git: https://github.com/mojun/fmdb.git
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  DoActionSheet: e8a527e58b94dfddd11b7cd166931b17cb8d5605
+  FastImageCache: 7cc86415d472370ea9778af08284d89ceac77221
+  FCFileManager: 8bfc931ce2a6223676147e9baf0e8a65c691eca6
+  FMDB: f95ac3e0a67299f5db92bfa63e3968c1066b4b1f
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MMTransitionAnimator: c42b6478dc45f311ce0a0abd1bf4223f42fe9c38
+  RealReachability: 8b6644c6b3145f7552ed83bffb52c49b0f3b55e3
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SQLCipher: 4c768761421736a247ed6cf412d9045615d53dff
+  StreamingKit: c329785aaef3ac142d4ae388345bfe1ed23cfd45
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  TCBlobDownload: 8726f054cc00bb5f66a57bb0c99764842dfa5c9f
+  TYMProgressBarView: 9f4c54bfd1cde0340f25a8c67e6c3548611f1a8e
+  UIImage-ResizeMagick: f08c2d14d1e8a5f0b402185408785540562f2fe7
+
+COCOAPODS: 0.39.0

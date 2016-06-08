@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="_leftContainerView" destination="gbY-hw-TDL" id="DDi-Gq-Gvs"/>
+                <outlet property="_mainContainerView" destination="uVG-BO-Cbx" id="QFk-8G-llr"/>
+                <outlet property="_mainLeftConstraint" destination="FAB-so-Vne" id="UM7-iu-tqf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbY-hw-TDL" userLabel="leftContainer">
+                    <rect key="frame" x="0.0" y="0.0" width="104" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="104" id="M99-DD-tG5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVG-BO-Cbx" userLabel="mainContainer">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uVG-BO-Cbx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FAB-so-Vne"/>
+                <constraint firstAttribute="bottom" secondItem="uVG-BO-Cbx" secondAttribute="bottom" id="FlJ-G1-LhB"/>
+                <constraint firstItem="uVG-BO-Cbx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JgJ-yE-Qai"/>
+                <constraint firstItem="gbY-hw-TDL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="S8A-gr-Ela"/>
+                <constraint firstItem="gbY-hw-TDL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U3d-Tq-TCZ"/>
+                <constraint firstAttribute="bottom" secondItem="gbY-hw-TDL" secondAttribute="bottom" id="mDg-TK-elP"/>
+                <constraint firstAttribute="trailing" secondItem="uVG-BO-Cbx" secondAttribute="trailing" id="qqN-JH-OOr"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="206" y="295"/>
+        </view>
+    </objects>
+</document>

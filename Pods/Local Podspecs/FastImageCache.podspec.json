@@ -1,0 +1,24 @@
+{
+  "name": "FastImageCache",
+  "version": "1.5.1",
+  "license": {
+    "type": "MIT",
+    "text": "copyright"
+  },
+  "homepage": "https://github.com/mojun/MMTransitionAnimator",
+  "authors": {
+    "mojun": "immojun@gmail.com"
+  },
+  "summary": "iOS library for quickly displaying images while scrolling.",
+  "source": {
+    "git": "https://github.com/mojun/FastImageCache.git"
+  },
+  "source_files": [
+    "FastImageCache",
+    "FastImageCache/FastImageCache/**/*.{h,m}"
+  ],
+  "requires_arc": true,
+  "platforms": {
+    "ios": "6.0"
+  }
+}

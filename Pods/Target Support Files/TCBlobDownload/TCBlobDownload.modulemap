@@ -1,0 +1,6 @@
+framework module TCBlobDownload {
+  umbrella header "TCBlobDownload-umbrella.h"
+
+  export *
+  module * { export * }
+}

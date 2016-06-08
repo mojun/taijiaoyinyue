@@ -1,0 +1,126 @@
+//
+//  app_prefix.pch
+//  AntenatalTraining
+//
+//  Created by test on 16/4/26.
+//  Copyright © 2016年 kimoworks. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <Masonry/Masonry.h>
+#import <FMDB/FMDB.h>
+#import <FCFileManager/FCFileManager.h>
+#import <FastImageCache/FastImageCache.h>
+#import <DoActionSheet/DoActionSheet.h>
+#import <GoogleMobileAds/GoogleMobileAds.h>
+#import "AppMacros.h"
+#import "PopSheetTool.h"
+#import "AdMobTool.h"
+#import "UIView+convenience.h"
+#import "UIView+Toast.h"
+#import "UIViewController+Additions.h"
+#import "UIViewController+ATEmpty.h"
+#import "UIImageView+LBBlurredImage.h"
+#import "ArrayUtils.h"
+
+#import "QICollectionListView.h"
+#import "QITableListView.h"
+
+/// 无法播放音频 
+#define kAuidoHost @"http://www.110.com/"
+
+#define kThemeColor UIColor_RGB(138,198,99)//(173, 214, 255)
+#define kThemeLightColor UIColor_RGB(205,233,153)
+#define kThemeGrayColor UIColor_RGB(182,193,199)
+#define kThemeLightBlack UIColor_RGB(66,66,66)
+#define kQueueBarProgressHeight 2
+#define kEncryptKey @"34bdgh048xzm1iag0cl1sin49dnacm9gvqo5"
+#define kScreenWidth screenSize().width
+#define kScreenHeight screenSize().height
+#define kGridImageViewRatio (14.0f / 9.0f)
+#define kGridCellNumberPerRow 3
+#define kGridCellSpacing 2
+#define kGridCellTextHeight 24
+#define kGridCellImageHeight (kGridCellWidth / kGridImageViewRatio)
+#define kGridCellWidth ((kScreenWidth - kGridCellSpacing * (kGridCellNumberPerRow + 1)) / kGridCellNumberPerRow)
+#define kGridCellHeight (kGridCellImageHeight + kGridCellTextHeight)
+
+#define kTableCellSeparatorColor [UIColor colorWithWhite:0.6 alpha:0.10]//UIColor_RGB(235, 235, 235)
+
+#define kPlayMediaNotification @"kPlayMediaNotification"
+#define kDownloadMediaNotification @"kDownloadMediaNotification"
+
+#define kQueueBarHeight 50
+/// 左边播放过的时间label
+#define kQueueLeftTimeLabelLeftSpace 14
+#define kQueueLeftTimeLabelTopSpace 14
+#define kQueueLeftTimeLabelHeight 13
+#define kQueueLeftTimeLabelWidth 36
+
+/// 右边未播放的时间label
+#define kQueueRightTimeLabelRightSpace 14
+#define kQueueRightTimeLabelTopSpace 14
+#define kQueueRightTimeLabelHeight 13
+#define kQueueRightTimeLabelWidth 36
+
+/// 标题label  居中显示左右顶拢
+#define kQueueTitleLabelTopSpace 26
+#define kQueueTitleLabelHeight 16
+
+/// 播放按钮，next， prev
+#define kQueueControlButtonTopSpace 40
+#define kQueueControlButtonHInnerSpace 34
+#define kQueueControlButtonWidth 44
+#define kQueueControlButtonHeight 44
+
+/// 音量条
+#define kQueueVolumeBarTopSpace 40
+#define kQueueVolumeBarHOuterSpace 64
+#define kQueueVolumeBarHeight 20
+
+/// 音量喇叭
+#define kQueueVolumeHSpace 20
+#define kQueueVolumeButtonSize 14
+
+///计算所有控件的高度
+#define kQueueAllControlHeight kQueueLeftTimeLabelHeight + kQueueTitleLabelHeight + kQueueVolumeBarHeight
+#define kQueueHRatio kScreenWidth / 320.0f
+#define kQueueVRatio (kScreenHeight - kQueueAllControlHeight - kScreenWidth) / (568 - kQueueAllControlHeight - 320)
+
+#define kQueueBarFooterHeight 40 /// queue full footer
+#define kQueueLabelColor [UIColor whiteColor]
+#define kTableFooterHeightForQueueBar 20
+
+#define kPlaylistBarHeight 46
+#define kDownloadBarHeight 44
+
+//test
+#define kListCellHeight 44
+#define kListCellWidth 20
+#define kMovieListCellHeight 10
+
+#define kBarAlpha  0
+
+#define kATDownloadFilePath(fileName) [NSString stringWithFormat:@"%@/Documents/%@", NSHomeDirectory(),fileName]
+
+typedef NS_ENUM(NSInteger, PlayAction) {
+    PlayActionNow,
+    PlayActionLater
+};
+
+#define PLAY_MUSIC(songs, offset)  [[NSNotificationCenter defaultCenter]postNotificationName:kPlayMediaNotification object:@{@"songs": songs, @"offset": @(offset), @"action": @(PlayActionNow)}]
+#define PLAY_LATER(songs, offset)  [[NSNotificationCenter defaultCenter]postNotificationName:kPlayMediaNotification object:@{@"songs": songs, @"offset": @(offset), @"action": @(PlayActionLater)}]
+#define DOWNLOAD_MUSIC(songs)  [[NSNotificationCenter defaultCenter]postNotificationName:kDownloadMediaNotification object:@{@"songs": songs}]
+
+typedef NS_ENUM(NSInteger, PZListType){
+    PZListTypeCollection,
+    PZListTypeTable
+};
+
+
+
+#endif

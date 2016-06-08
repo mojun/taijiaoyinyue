@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_guide" translatesAutoresizingMaskIntoConstraints="NO" id="iXo-9x-5e5">
+                                <rect key="frame" x="19" y="41" width="336" height="293"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iXo-9x-5e5" secondAttribute="height" multiplier="336:293" id="iFN-tp-x5d"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hrs-c7-dsa">
+                                <rect key="frame" x="0.0" y="334" width="375" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="cWN-vD-gv1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kimworks@育儿好助手" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTV-oR-ceH">
+                                <rect key="frame" x="101" y="602" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="胎教音乐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-7o-Rhf">
+                                <rect key="frame" x="119" y="546" width="136" height="48"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="34"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hrs-c7-dsa" secondAttribute="trailing" id="2QR-F1-niu"/>
+                            <constraint firstItem="Hrs-c7-dsa" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6pn-tU-Zqf"/>
+                            <constraint firstItem="Hrs-c7-dsa" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="7sr-xY-K7f"/>
+                            <constraint firstAttribute="trailing" secondItem="iXo-9x-5e5" secondAttribute="trailing" constant="20" id="Ado-P0-j2W"/>
+                            <constraint firstItem="iXo-9x-5e5" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="19" id="IZ7-s5-B3p"/>
+                            <constraint firstItem="nTV-oR-ceH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RF2-vV-q6m"/>
+                            <constraint firstItem="gBL-7o-Rhf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="V3c-nK-6bR"/>
+                            <constraint firstItem="Hrs-c7-dsa" firstAttribute="top" secondItem="iXo-9x-5e5" secondAttribute="bottom" id="ZWk-FR-CFc"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="nTV-oR-ceH" secondAttribute="bottom" constant="44" id="jLR-P7-FVY"/>
+                            <constraint firstItem="nTV-oR-ceH" firstAttribute="top" secondItem="gBL-7o-Rhf" secondAttribute="bottom" constant="8" id="uU0-4w-mE3"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34.5" y="347.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_guide" width="366" height="293"/>
+    </resources>
+</document>

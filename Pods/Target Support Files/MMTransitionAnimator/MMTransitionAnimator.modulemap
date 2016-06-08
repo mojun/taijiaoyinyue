@@ -1,0 +1,6 @@
+framework module MMTransitionAnimator {
+  umbrella header "MMTransitionAnimator-umbrella.h"
+
+  export *
+  module * { export * }
+}

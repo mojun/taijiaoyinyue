@@ -1,0 +1,1 @@
+../../../MMTransitionAnimator/Classes/MMTransitionAnimator/MMTransitionAnimator.h
